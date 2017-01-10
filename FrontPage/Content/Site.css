@@ -16,6 +16,9 @@ textarea {
     max-width: 280px;
 }
 
+.jumbotron {
+    padding: 4rem 3rem 2rem 1rem;
+}
 .home-jumbo {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
     background: url("images/header.jpg"),-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
@@ -26,3 +29,30 @@ textarea {
 
 .white-shade {
 }
+
+.shares-box
+{
+    padding-top:8px;
+}
+
+.shares-box .fa {
+  color: #e93282;
+  opacity: 0.7;
+  font-size : 2.5em;
+  margin-right: 10px;
+}
+
+.btn-login {
+    background-color: #f9B747;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-top:8px;
+}
+
+/*
+    a3bbbc
+    369590
+    bf5f76
+    f9b747
+*/
