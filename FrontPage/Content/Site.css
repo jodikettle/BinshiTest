@@ -1,6 +1,5 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -16,28 +15,127 @@ textarea {
     max-width: 280px;
 }
 
+.navbar-toggle {
+    z-index:3;
+    border-color: #dddddd;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #cccccc;
+}
+
+.navbar-brand {
+    display:none;
+    float: none;
+    height: 100%;
+    width: auto;
+    text-indent :-9999px;
+}
+
+.showLogo{
+    display:block;
+}
+
+.navbar-brand {
+    background: url("/Content/images/logoTest.png") center / contain no-repeat;
+    width: 127px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    .shares-box {
+        display:block;
+    }
+
+    .navbar-brand{
+        display:block;
+    }
+    .jumbotron {
+        display:none;
+    }
+    body header {
+        background: url("images/starsgradientsmall.jpg"),-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: url("images/starsgradientsmall.jpg"), -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),  url("images/starsgradientsmall.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    }
+}
+.smaller .shares-box i {
+    font-size: 25px;
+
+}
+.hideJumbo {
+    display:none;
+}
+.smaller .jumbotron{
+    display : none;
+}
+
+.smaller{
+    background: url("images/starsgradientsmall.jpg"),-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: url("images/starsgradientsmall.jpg"), -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),  url("images/starsgradientsmall.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
 .jumbotron {
     padding: 4rem 3rem 2rem 1rem;
+    background: none;
+    margin-bottom: 10px;
 }
-.home-jumbo {
+header.smallHeader {
+    margin-bottom: 80px;
+}
+
+header {
+    margin-top:-50px;
+    padding-top:50px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-    background: url("images/header.jpg"),-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: url("images/header.jpg"), -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),  url("images/header.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+header {
+    background: url("images/starsgradient.jpg"),-moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: url("images/starsgradient.jpg"), -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%),  url("images/starsgradient.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+.logo{
+    background: url("/Content/images/logoBig.png")  no-repeat;
+}
+.lead {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .white-shade {
 }
+.intro {
+    background: #eeeeee;
+}
+.intro-box {
+    padding: 30px;
+    text-align: center;
+}
+ .intro-box .fa {
+    font-size : 5rem;   
+
+ }
 
 .shares-box
 {
     padding-top:8px;
 }
 
+.navbar {
+}
+.icon-bar {
+    color: #000000;
+}
+
 .shares-box .fa {
   color: #e93282;
-  opacity: 0.7;
+  opacity: 0.9;
   font-size : 2.5em;
   margin-right: 10px;
 }
@@ -50,9 +148,86 @@ textarea {
     margin-top:8px;
 }
 
+.gratitude-intro {
+    background-image : url("images/symphony.png");
+    padding: 30px 50px 20px;
+}
+.graditude-card{
+}
+.graditude-card ul  {
+    padding-left:0;
+}
+
+.graditude-card ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+.graditude-card ul fa {
+    padding-right: 10px;
+}
+
+.login-banner {
+    background-color: #eeeeee;
+    color: #666666;
+    padding : 50px;
+}
+.quote-banner {
+    background-color: #e93282;
+    color: #ffffff;
+    padding:50px 100px 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+
+.info-box {
+    border-right : 2px solid #cecece;
+}
+.info-box:last-child {
+    border-right :none;
+}
+
+.info-box {
+    font-weight: bold;
+    font-size: 20px;
+}
+footer {
+    padding-top: 10px;
+    background-color: #369590;
+    padding-bottom: 30px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    padding-top : 10px;
+}
+
+footer ul li {
+    list-style : none;
+    color: #ffffff;
+}
+
+footer ul li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.footer-copyrite{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
 /*
     a3bbbc
     369590
     bf5f76
     f9b747
 */
+
+
+

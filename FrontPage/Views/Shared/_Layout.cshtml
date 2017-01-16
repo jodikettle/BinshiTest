@@ -9,50 +9,53 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="shares-box">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <i class="fa fa-reddit-square" aria-hidden="true"></i>
-                    <i class="fa fa-pinterest-square" aria-hidden="true"></i>
-                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-                </div>
-                @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    @*<li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>*@
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <button type="button" class="btn btn-login">Sign up</button>
-                    </li>
-                    <li>
-                        <button type="button" class="btn btn-login">Login</button>
-                    </li>
-                </ul>
+    <header>
+         <nav class="navbar navbar-fixed-top">
+             <div class="container">
+                 <div class="nav-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                     </button>
+                     <a href="/" title="Gratitude Home Page" class="navbar-brand">
+                         Gratitude Village
+                     </a>             
+                 </div>
+                 <div class="nav navbar-nav navbar-left shares-box">
+                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                     <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                     <i class="fa fa-envelope" aria-hidden="true"></i>
+                     <i class="fa fa-reddit-square" aria-hidden="true"></i>
+                     <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                     <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                 </div>
+                 <div class="navbar-collapse collapse">
+                     <ul class="nav navbar-nav navbar-right">
+                         <li>
+                             <button type="button" class="btn btn-login">Sign up</button>
+                         </li>
+                         <li>
+                             <button type="button" class="btn btn-login">Login</button>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="container">
+                <img class="logo" src="~/Content/images/logobig.png" />
+                <p class="lead"> - Your online gratitude journal</p>
             </div>
         </div>
-    </div>
+    </header>
 
     @RenderBody()
-    <hr />
-    <div class="container">
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    @Html.Partial("_Footer")
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <script type="text/javascript" src="~/Scripts/header.js"></script>
     @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>*@

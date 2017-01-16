@@ -1,0 +1,30 @@
+﻿<footer class="site-footer footer">
+    <div class="container footer-wrapper">
+        <ul>
+            <li>
+                @Html.ActionLink("Why be grateful", "Why", "Home", null, new { @class = "navLink" })
+            </li>
+            <li>
+                @Html.ActionLink("About", "About", "Home", null, new { @class = "navLink" })
+            </li>
+            <li>
+                @Html.ActionLink("FAQS", "faqs", "Home", null, new { @class = "navLink" })
+            </li>
+            <li>
+                @Html.ActionLink("Reading", "Reading", "Home", null, new { @class = "navLink" })
+            </li>
+            <li>
+                @Html.ActionLink("Buy us a coffee", "Donate", "Home", null, new { @class = "navLink" })
+            </li>
+            <li>
+                @Html.ActionLink("Terms", "Terms", "Home", null, new { @class = "navLink" })
+            </li>
+            <li>
+                @Html.ActionLink("Contact Us", "Contact", "Contact", null, new { @class = "navLink" })
+            </li>
+        </ul>
+        <div class="footer-copyrite">
+            &copy; @DateTime.Now.Year - Gratitude Village
+        </div>
+    </div>
+</footer>
